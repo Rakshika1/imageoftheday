@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Image of the Day</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Nasa image of the Day</h1>
+      <hr />
+
+      <div class="datePickerContainer">
+        <label> Select a Date : </label>
+        <input type="date" id="Datepicker" onchange="GetImage()" />
+      </div>
+
+      <div class="hidden" id="infoContainer">
+        <h2 id="title"></h2>
+        <div id="imageContainer">
+          <img id="image" alt="nasa image of the day...." />
+        </div>
+        <p id="description"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
